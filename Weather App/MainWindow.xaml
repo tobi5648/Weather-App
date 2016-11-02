@@ -1,0 +1,23 @@
+﻿<Window x:Class="Weather_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Weather_App"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="350" Width="393.871">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="blue-sky.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="txtCityBox" TabIndex="0" HorizontalAlignment="Left" Height="26" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" KeyUp="txtCityBox_KeyUp"/>
+        <Label x:Name="lblCity" Content="Write the name of the city you wish to see the temperature for " Foreground="Red" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblTemperature"  Foreground="Red" FontSize="140" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="344" RenderTransformOrigin="5.113,13.788" Margin="10,72,0,0" Height="215"/>
+
+        <Button x:Name="btnGetTemperature" TabIndex="1" Content="Get temp" HorizontalAlignment="Left" Margin="290,41,0,0" VerticalAlignment="Top" Width="64" Height="26" Click="btnGetTemperature_Click"/>
+        
+
+
+    </Grid>
+</Window>
