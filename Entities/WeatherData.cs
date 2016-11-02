@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Entities
+﻿namespace Entities
 {
     public struct WeatherData
     {
-        public double Temperature { get; set; }
-        public string City { get; set; }
+        #region Fields
+        /// <summary>
+        /// The Temperature of the city.
+        /// </summary>
+        public double Temperature { get; set; } 
+        #endregion
     }
 }
